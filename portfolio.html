@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* image */
+.img {
+  background-color: #aaa;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Olatunde Opeyemi</h1>
+  <h3></h3><p>GIS & Front End Developer.</p></h3>
+</div>
+
+<div class="topnav">
+  <a href="#">Experience</a>
+  <a href="#">Education</a>
+  <a href="#">Skill/Project</a>
+  <a href="#" style="float:right">Contact us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><u>BIO INFO...</u></h2>
+  <ul><h4>State Of Origin: Ekiti </ul>
+  <ul><h4>D.O.B: 06-04-92 </h5></ul>
+  <ul><h4>Address: 21, Surulere estate, Ikorodu, Lagos .</h5></ul>
+  <ul><h4>Home Town: Ikere Ekiti</h5></ul>
+  <ul><h4>Occupation: Gis Analyst </h5></ul>
+  <ul><h4>Slack ID: olatunde_opeyemi</h5></ul>
+     
+      <div class="" style="height:100px;"></div>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2><u>Experience</u></h2>
+<h4>2020 - Till Date - Front End intern ;STARTNG, Lagos </h4>
+      <p><h5><ul> Building sophisticated web/portfolio page</ul><ul> development on piggyvest webpage</ul></h5>
+
+      <h4>2018 - Till Date - GIS Developer(LAGOS e-GIS PROJECT);TEQBRIDGE, MTN BUILDING IKEJA </h4>
+      <h5><ul> Working on the ArcSDE Database, to populate it with parcel shapefile and attributes.</ul><ul> Advanced Editing of shapefiles on the enterprises GIS server</ul></h5></p>
+
+      <div class="" style="height:100px;"></div>
+      
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>EDUCATION</h2>
+      <h4>Spatial Analysis and Satellite Imagery in a GIS, University of Toronto </H4><H5>(an online course authorized by University of Toronto and offered through Coursera)- 2019</h5>
+
+      <H4>Pluralsight; Mobile-Web Development </H4><H5> 
+<UL>Learn how to build with the use of Html, CSS, Javascript</UL><ul> and javascript Framework(Angular)</ul></H5>
+        
+
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="" style="height:100px;"><img src=" olatunde.jpg" alt="olatunde" class="img"> </div><br>
+
+      <p display="flex">Olatunde Opeyemi has always have passion for tech since his undergraduate days, even though he never studied computer science; his readings and exploration has never shy away from the tech field .</p>
+      <p>HOBBIES & INTEREST: Includes Reading, Travelling, Keeping Fit</p>
+    </div>
+    <div class="card">
+       <h3>CONTACT US</h3>
+      <p><FORM>
+        
+        <form class="MyLink" >
+  <label for="fullname">Full name</label>
+
+  <input type="text" id="fullname" name="fullname" placeholder="Full name">
+  
+  <label for="email">Email Address</label>
+  
+  <input type="text" id="email" name="email" placeholder="Email Address">
+  
+  <label for="Phone">Phone Number</label>
+
+  <input type="text" id="Phone" name="Phone" placeholder="Phone Number">
+  
+  <label for="  Message">Mesage</label>
+
+  <input type="text" id="Message" name="Message" placeholder="Message us">
+
+
+  <BUTTON>SUBMIT</BUTTON>
+      </FORM></p>
+    </div>
+    <div class="card">
+       <h3> Connect with me </h3>
+      <div class=""><p><img src="whatsapp.png" alt="twitter" class=""></p></div>
+      <div class=""><p><img src="facebook.png" alt="facebook" class=""></p></div>
+      <div class=""><p><img src="linkedin.png" alt="linkedin" class=""></p></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>© 2020 | OLB Devs</h2>
+</div>
+
+</body>
+</html>
