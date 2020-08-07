@@ -40,6 +40,10 @@ body {
   text-decoration: none;
 }
 
+.topnav .icon {
+  display: none;
+}
+
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
@@ -115,13 +119,14 @@ body {
   <h3></h3><p>GIS & Front End Developer.</p></h3>
 </div>
 
-<div class="topnav">
-  <ul>
-  <li><a href="#INFO">INFO</a></li>
-  <li><a href="#Experience">Experience</a></li>
-  <li><a href="#Education"> Education</a></li>
-  <li><a href="#Contact us" style="float:right">Contact us</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+
+  <a href="#INFO">INFO</a>
+  <a href="#Experience">Experience</a>
+  <a href="#Education"> Education</a>
+  <a href="#Contact us" style="float:right">Contact us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
 </div>
 
 <div class="row">
@@ -156,7 +161,7 @@ body {
     </div>
     <div class="card">
       <h2>EDUCATION</h2>
-      <h4> Surveying and Geoinformatics, Federal University of Technology, Akure - 2018 </H4><H5> </h5>
+      <h4> Surveying and Geoinformatics, Federal University of Technology, Akure - 2016 </H4>
 
       <h4>Spatial Analysis and Satellite Imagery in a GIS, University of Toronto </H4><H5>(an online course authorized by University of Toronto and offered through Coursera)- 2019</h5>
 
@@ -213,6 +218,17 @@ body {
 <div class="footer">
   <h2>© 2020 | OLB Devs</h2>
 </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 
 </body>
 </html>
